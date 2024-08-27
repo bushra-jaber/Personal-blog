@@ -1,0 +1,49 @@
+.nav-bar{
+    padding: 10px 0px;
+}
+.logo {
+    float: left;
+    width: 30%;
+   
+}
+.nav-bar{
+    float: left;
+    width: 35%;
+   
+}
+.Nameblog{
+    font-size: 30px;
+}
+.nav-bar ul li {
+    display: inline-block;
+    padding-left: 20px;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color:orange;
+}
+i{
+    color: #384aeb;
+    padding-right: 20px;
+}
+.button{
+    color: #333;
+    border: 1px solid #384aeb;
+    padding: 10px 20px;
+    border-radius:20px
+}
+ .nav-bar{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+.nav-bar ul li a:hover{
+    color:orange;
+    
+}

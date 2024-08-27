@@ -1,0 +1,22 @@
+.footer{
+    grid-area: ft;
+    margin-top: 20%;
+    background-color: #333; 
+   padding-top: 30px;
+   padding-bottom: 30px;
+   overflow: hidden;
+    
+}
+.footer p{
+    display: flex;
+    justify-content: center;
+    font-family:'Lucida Sans';
+    color: white;
+}
+.footer p:hover{
+    color: orange;
+}
+.footer span{
+    color: rgba(255, 68, 0, 0.89);
+    padding-left: 10px;
+}

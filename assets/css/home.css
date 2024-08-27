@@ -1,0 +1,315 @@
+body {
+
+    font-family: 'Dancing Script';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: grid;
+    top: 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    grid-template-columns: 30px repeat(7, 1fr);
+    grid-template-rows: 70px 400px 1fr;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main "
+        "ft ft ft ft ft ft ft ft ";
+}
+
+
+.sidebarr {
+
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+    margin-top: 10px;
+}
+
+.info {
+    font-size: 11px;
+    color: #003;
+}
+
+#Myimage {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+}
+
+.Menue {
+    background-color: rgba(245, 245, 245, 0.735);
+    padding-top: 30px;
+
+
+
+
+}
+
+.Menue:hover {
+    background-color: rgba(68, 68, 85, 0.32);
+
+}
+
+.Menue li a {
+    line-height: 60px;
+}
+
+.Menue p:hover {
+    font-weight: bold;
+}
+
+.Menue li a:hover {
+
+    color: orange;
+    font-size: 30px;
+}
+
+.title {
+    font-size: 2em;
+    padding-right: 20px;
+
+}
+
+.content .product {
+    position: relative;
+}
+
+.content .product:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    z-index: -1;
+    height: 0;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.dicription p,
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.content .product:hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+.content .product h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(59, 59, 59);
+}
+
+.product {
+    margin-top: 10px;
+    float: left;
+    width: 32%;
+    margin-bottom: 100px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.border-botton {
+    border-bottom: 2px solid #384aeb;
+
+}
+
+.popular {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.info {
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+@media only screen and (max-width:600px) {
+  strong{
+    font-size: 5vw;
+  }
+    .container {
+        padding: 15px;}
+
+
+        .content .product{
+            margin: auto;
+            margin-top: 10px;
+        }
+    .header {
+        font-size: 5px !important;
+
+    }
+
+    .navbar ul li a {
+        font-size: 10px !important;
+
+    }
+
+    .navbar .nav-link {
+        padding-block: 0px !important;
+
+    }
+
+    .content {
+        margin-top: 210% !important;
+
+    }
+
+    .content b {
+        font-size: 10px;
+    }
+
+    .sidebar {
+        height: 100vh;
+        padding: 40px;
+        background-color: none;
+
+    }
+
+    .info {
+        font-size: 10px !important;
+    }
+
+    #Myimage {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 100%;
+    }
+
+    .Menue {
+        background-color: white !important;
+        height: 100vh !important;
+    }
+
+    .Menue li {
+        margin-bottom: 10px;
+    }
+
+    .Menue li a {
+        line-height: 20px !important;
+
+        width: 100% !important;
+    }
+
+    .footer {
+        margin-top: 50% !important;
+    }
+
+    .Menue li a {
+        font-size: 10px;
+    }
+
+    .Menue li a:hover {
+
+
+        font-size: 15px !important;
+    }
+}
+
+@media(min-width:600px) and (max-width:900px) {
+
+    .header {
+        font-size: 10px !important;
+    }
+
+    .content {
+        width: 80% !important;
+    }
+
+    .sidebar {
+        width: 100% !important;
+        height: 100vh;
+
+    }
+
+    .product {
+        width: 100% !important;
+    }
+
+    .info {
+        font-size: 7px !important;
+    }
+
+    #Myimage {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 100%;
+    }
+
+    .footer {
+        margin-top: 100px !important;
+    }
+
+    .Menue li a {
+        font-size: 10px;
+    }
+
+    .Menue li a:hover {
+
+
+        font-size: 20px !important;
+    }
+}
+
+@media(min-width:901px) {
+    .sidebar {
+        height: 100vh;
+
+    }
+
+    .info {
+        font-size: 8px !important;
+
+    }
+
+    .Menue li a {
+        font-size: 20px;
+    }
+
+    #Myimage {
+        width: 70px !important;
+        height: 70px !important;
+        border-radius: 100%;
+    }
+}
